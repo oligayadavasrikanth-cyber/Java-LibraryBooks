@@ -1,7 +1,7 @@
  
  import java.time.LocalDate;
 import java.util.*;
-
+// BOOK DETAILS
  class Book
  {
     String bookName;
@@ -27,7 +27,7 @@ import java.util.*;
 
  }
  
-
+//USER DETAIL
  class User
  {
    private String userName;
@@ -55,7 +55,7 @@ import java.util.*;
       return userId;
     }
  }
-
+// LIBRARY DETAILS
  class Library
  {
     String libraryName;
@@ -80,7 +80,8 @@ import java.util.*;
     }
 
  }
-
+/*Data Transfer Object -Its purpose is to group together the related data about book issues — which user borrowed which book from which library and the respective issue/return dates.
+ It encapsulates data fields and provides a constructor to initialize them but typically has minimal or no behavio*/
  class BookIssueRecord
  {
    Book book;
@@ -97,7 +98,7 @@ import java.util.*;
         this.returnDate = returnDate;
     }
  }
-
+//ADDING DATA TO COLLECTION OBJECTS
  class MiniLibrarySystem
  {
     Stack<Book> bookDetails = new Stack<>();
@@ -350,6 +351,7 @@ import java.util.*;
      sc.close();
    }
  }
+//MAIN CLASS
  public class LibraryManagementSystem
  {
   public static void main(String[] args)
@@ -360,4 +362,5 @@ import java.util.*;
  }
 
  
+
 
